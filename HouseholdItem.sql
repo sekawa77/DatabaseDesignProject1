@@ -3,5 +3,6 @@ CREATE TABLE HouseholdItem (
     householdItemTypeID INTEGER,
     brand VARCHAR(255),
 	itemName VARCHAR(255),
-	FOREIGN KEY (householdItemTypeID) REFERENCES HouseholdItemType(householdItemTypeID) ON UPDATE CASCADE
+	FOREIGN KEY (householdItemTypeID) REFERENCES HouseholdItemType(householdItemTypeID) ON UPDATE CASCADE,
+	UNIQUE(householdItemID)
 );
