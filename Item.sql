@@ -9,5 +9,6 @@ CREATE TABLE Item (
 	FOREIGN KEY (storeID) REFERENCES Store(storeID) ON UPDATE CASCADE,
 	FOREIGN KEY (consumableItemID) REFERENCES ConsumableItem(consumableItemID) ON UPDATE CASCADE,
 	FOREIGN KEY (householdItemID) REFERENCES HouseholdItem(householdItemID) ON UPDATE CASCADE,
-	FOREIGN KEY (inventoryID) REFERENCES Inventory(inventoryID) ON UPDATE CASCADE
+	FOREIGN KEY (inventoryID) REFERENCES Inventory(inventoryID) ON UPDATE CASCADE,
+	UNIQUE(itemID)
 );
