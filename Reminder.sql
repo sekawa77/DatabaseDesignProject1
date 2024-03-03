@@ -3,5 +3,6 @@ CREATE TABLE Reminder (
 	itemID INTEGER,
     reminderName VARCHAR(255),
     daysTillPurchase INTEGER,
-	FOREIGN KEY (itemID) REFERENCES Item(itemID) ON UPDATE CASCADE
+	FOREIGN KEY (itemID) REFERENCES Item(itemID) ON UPDATE CASCADE,
+	UNIQUE(reminderID)
 );
