@@ -4,5 +4,5 @@ CREATE TABLE ConsumableItem(
     daysTillExpiration INTEGER,
 	itemName VARCHAR(255),
 	FOREIGN KEY (consumableTypeID) REFERENCES ConsumableType(consumableTypeID) ON UPDATE CASCADE,
-	UNIQUE(consumableItemID, itemName)
+	UNIQUE(consumableItemID)
 );
