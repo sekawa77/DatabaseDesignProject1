@@ -3,6 +3,6 @@ CREATE TABLE User (
     name VARCHAR(255),
     username VARCHAR(255),
     passwords VARCHAR(255),
-    UNIQUE(userID)
+    UNIQUE(userID, username, password)
 );
 
