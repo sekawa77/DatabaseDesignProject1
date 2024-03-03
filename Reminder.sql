@@ -4,5 +4,5 @@ CREATE TABLE Reminder (
     reminderName VARCHAR(255),
     daysTillPurchase INTEGER,
 	FOREIGN KEY (itemID) REFERENCES Item(itemID) ON UPDATE CASCADE,
-	UNIQUE(reminderID)
+	UNIQUE(reminderID, itemID)
 );
